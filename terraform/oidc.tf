@@ -66,6 +66,7 @@ resource "aws_iam_role_policy" "github_actions" {
           "lambda:GetPolicy",
           "lambda:ListVersionsByFunction",
           "lambda:PublishVersion",
+          "lambda:GetFunctionCodeSigningConfig",
         ]
         Resource = "*"
       },
@@ -140,6 +141,11 @@ resource "aws_iam_role_policy" "github_actions" {
           "iam:CreateOpenIDConnectProvider",
           "iam:DeleteOpenIDConnectProvider",
           "iam:GetOpenIDConnectProvider",
+          "iam:CreatePolicy",
+          "iam:DeletePolicy",
+          "iam:GetPolicy",
+          "iam:GetPolicyVersion",
+          "iam:ListPolicyVersions",
         ]
         Resource = "*"
       },
