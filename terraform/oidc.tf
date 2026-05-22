@@ -66,6 +66,7 @@ resource "aws_iam_role_policy" "github_actions" {
           "lambda:GetPolicy",
           "lambda:ListVersionsByFunction",
           "lambda:PublishVersion",
+          "lambda:GetFunctionCodeSigningConfig",
         ]
         Resource = "*"
       },
@@ -83,6 +84,12 @@ resource "aws_iam_role_policy" "github_actions" {
           "dynamodb:ListTagsOfResource",
           "dynamodb:TagResource",
           "dynamodb:UntagResource",
+          "dynamodb:PutItem",
+          "dynamodb:GetItem",
+          "dynamodb:UpdateItem",
+          "dynamodb:DeleteItem",
+          "dynamodb:Scan",
+          "dynamodb:Query",
         ]
         Resource = "*"
       },
@@ -134,6 +141,11 @@ resource "aws_iam_role_policy" "github_actions" {
           "iam:CreateOpenIDConnectProvider",
           "iam:DeleteOpenIDConnectProvider",
           "iam:GetOpenIDConnectProvider",
+          "iam:CreatePolicy",
+          "iam:DeletePolicy",
+          "iam:GetPolicy",
+          "iam:GetPolicyVersion",
+          "iam:ListPolicyVersions",
         ]
         Resource = "*"
       },
