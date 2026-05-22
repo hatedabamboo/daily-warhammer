@@ -83,6 +83,12 @@ resource "aws_iam_role_policy" "github_actions" {
           "dynamodb:ListTagsOfResource",
           "dynamodb:TagResource",
           "dynamodb:UntagResource",
+          "dynamodb:PutItem",
+          "dynamodb:GetItem",
+          "dynamodb:UpdateItem",
+          "dynamodb:DeleteItem",
+          "dynamodb:Scan",
+          "dynamodb:Query",
         ]
         Resource = "*"
       },
