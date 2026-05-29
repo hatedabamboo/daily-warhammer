@@ -1,6 +1,6 @@
 # Daily Warhammer Quotes
 
-> Daily quotes from Warhammer 40k. Sometimes real, sometimes not, 100% Warhammer.
+> Daily wisdom from the 41st Millennium. Sometimes real, sometimes not. Always Warhammer. Always Grimdark.
 
 Automated bot for BlueSky to post daily Warhammer qutes. Link to the bot itself: [Daily Warhammer Quotes](https://bsky.app/profile/dailywhquotes.bsky.social)
 
